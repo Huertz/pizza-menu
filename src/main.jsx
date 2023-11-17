@@ -75,6 +75,19 @@ function Menu() {
   );
 }
 
+function Pizza() {
+  return (
+    <div>
+      <img
+        src='pizzas/spinaci.jpg'
+        alt='pizza spinaci'
+      />
+      <h3>Pizza Spinacii</h3>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    </div>
+  );
+}
+
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 11;
@@ -87,19 +100,6 @@ function Footer() {
     <footer className='footer'>
       {new Date().toLocaleTimeString()} We're currently open
     </footer>
-  );
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img
-        src='pizzas/spinaci.jpg'
-        alt='pizza spinaci'
-      />
-      <h3>Pizza Spinacii</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-    </div>
   );
 }
 
