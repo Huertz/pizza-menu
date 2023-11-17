@@ -58,19 +58,20 @@ function App() {
 }
 
 function Header() {
+  const style = {};
   return (
-    <h1 style={{ color: 'red', fontSize: '48px', textTransform: 'uppercase' }}>
-      Fast React Pizza Co.
-    </h1>
+    <header className='header'>
+      <h1 style={{}}>Fast React Pizza Co.</h1>
+    </header>
   );
 }
 
 function Menu() {
   return (
-    <div>
+    <main className='menu '>
       <h2>Our Menu</h2>
       <Pizza />
-    </div>
+    </main>
   );
 }
 
@@ -83,7 +84,9 @@ function Footer() {
   console.log(isOpen);
 
   return (
-    <footer>{new Date().toLocaleTimeString()} We're currently open</footer>
+    <footer className='footer'>
+      {new Date().toLocaleTimeString()} We're currently open
+    </footer>
   );
 }
 
@@ -94,7 +97,7 @@ function Pizza() {
         src='pizzas/spinaci.jpg'
         alt='pizza spinaci'
       />
-      <h2>Pizza Spinacii</h2>
+      <h3>Pizza Spinacii</h3>
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
     </div>
   );
