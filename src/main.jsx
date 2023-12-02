@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './main.css';
 
+//! pizza data
 const pizzaData = [
   {
     name: 'Focaccia',
