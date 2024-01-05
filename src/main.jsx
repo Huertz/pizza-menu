@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 // 1st react app
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -60,7 +62,6 @@ function App() {
 }
 
 function Header() {
-  const style = {};
   return (
     <header className='header'>
       <h1 style={{}}>Fast React Pizza Co.</h1>
@@ -91,7 +92,7 @@ function Menu() {
           </ul>
         </React.Fragment>
       ) : (
-        <p>We're still working on our menu. Please come back later</p>
+        <p>We re still working on our menu. Please come back later</p>
       )}
     </main>
   );
@@ -128,13 +129,13 @@ function Footer() {
     <footer className='footer'>
       {isOpen === true ? (
         <div className='order'>
-          <p>We're open until {closeHour}.00. Come visit us or order online</p>
+          <p>We re open until {closeHour}.00. Come visit us or order online</p>
           <button className='btn'>Order</button>
         </div>
       ) : (
         <div className='order'>
           <p>
-            We're currently closed happy tp welcome you between {openHour}.00
+            We re currently closed happy tp welcome you between {openHour}.00
             and {closeHour}.00
           </p>
         </div>
